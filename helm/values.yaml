@@ -1,0 +1,29 @@
+# Default values for helm.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+namespace: ""
+
+casts:
+  replicaCount: 1
+  image:
+    repository: icedrus/cast:latest
+    tag: ""
+
+movies:
+  replicaCount: 1
+  image:
+    repository: icedrus/movie:latest
+    tag: ""
+
+db_casts:
+  replicaCount: 1
+  image:
+    repository: postgres
+    tag: 12.0-alpine  
+
+db_movies:
+  replicaCount: 1
+  image:
+    repository: postgres
+    tag: 12.0-alpine  
